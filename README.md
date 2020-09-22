@@ -37,7 +37,7 @@ Export the annotation layer as you normally would and the MIDI file will have th
 
 ## future
 
-I'll try and send a link to this tweak to Cannam, et. al, see if they might want to integrate it into SV or anything.  For the moment, the tweaked source along with an 
+I sent a link to this tweak to Cannam, et. al.  For the moment, the tweaked source along with an 
 an installer for OSX will be included here.  When I get a chance I'll compile it on a PC and include the installer for that above too! 
 
 
