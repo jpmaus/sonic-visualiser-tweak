@@ -20,7 +20,7 @@ in pitch than the highest note on a piano, those results are neither accurate no
 
 ## tweak explanation
 There is plenty about our tweaks of SV's source that remains incomplete--viz., the ability to convert "edit layer data" window data into  MIDI, the integration of [ARSS](https://github.com/derselbst/ARSS)--
-however, Mo Kanan and I did manage to complete our tweak to the "Plugin Parameters" window in SV, which allows the calculation/export of tempo with MIDI annotation layers.  We did this over a year ago, but I'm just uploading it now for anyone who wants the feature (maybe SV has it now, I don't know!):
+however, Mo Kanan and I did manage to complete our tweak to the "Plugin Parameters" window in SV, which allows the calculation/export of tempo with MIDI annotation layers.  We did this over a year ago, but only I'm just uploading it now for anyone who wants the feature (maybe SV has it now, I don't know!):
 
 <p align="center">
 <img src="tempo_01.png" width="300" height="484">
