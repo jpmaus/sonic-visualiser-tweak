@@ -1,0 +1,17 @@
+data/test/TestResampler.cpp.i
+data/speex/speex_resampler.h.i
+data/build/Makefile.linux.ipp.i
+data/src/Resampler.cpp.i
+data/README.txt.i
+data/build/Makefile.osx.libsamplerate.i
+data/speex/resample.c.i
+data/speex/COPYING.i
+data/build/Makefile.inc.i
+data/bqresample/Resampler.h.i
+data/.travis.yml.i
+data/.hgignore.i
+data/build/run-platform-tests.sh.i
+data/COPYING.i
+data/Makefile.i
+data/README.md.i
+data/build/Makefile.linux.libsamplerate.i

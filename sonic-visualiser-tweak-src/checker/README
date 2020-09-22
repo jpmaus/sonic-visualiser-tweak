@@ -1,0 +1,132 @@
+
+[Vamp] Plugin Load Checker
+==========================
+
+This is a very small command-line program (C++98, no particular
+dependencies) for testing plugin libraries to see if they are
+loadable. You run the program, pass it a list of library paths to
+stdin, it tries to load them, and it reports to stdout whether each
+load succeeded or not.
+
+The program was written for use with Vamp audio analysis plugins, but
+it also works with other plugin formats. It has some hardcoded
+knowledge of Vamp, LADSPA, and DSSI plugins but it can be used with
+any plugins that involve loading DLLs and looking up descriptor
+functions from them.
+
+It comes with a library (C++11, Qt) that searches for candidate plugin
+files for some known formats in standard locations and runs the
+checker program as a separate process to check whether they can be
+loaded. This can be used to scan plugins and blacklist any that might
+crash a host on load.
+
+
+About the command-line program
+------------------------------
+
+The program (vamp-plugin-load-checker) accepts the name of a
+descriptor symbol as its only command-line argument. It then reads a
+list of plugin library paths from stdin, one per line. For each path
+read, it attempts to load that library and retrieve the named
+descriptor symbol, printing a line to stdout reporting whether this
+was successful or not and then flushing stdout. The output line format
+is described below. The program exits with code 0 if all libraries
+were loaded successfully and non-zero otherwise.
+
+Note that library paths must be ready to pass to dlopen() or
+equivalent; this usually means they should be absolute paths.
+
+Output line for successful load of library libname.so:
+SUCCESS|/path/to/libname.so|
+
+Output line for failed load of library libname.so:
+FAILURE|/path/to/libname.so|Reason for failure if available
+
+Although this program was written for use with Vamp audio analysis
+plugins, it also works with other plugin formats. The program has some
+hardcoded knowledge of Vamp, LADSPA, and DSSI plugins, but it can be
+used with any plugins that involve loading DLLs and looking up
+descriptor functions from them.
+
+Sometimes plugins will crash completely on load, bringing down this
+program with them. If the program exits before all listed plugins have
+been checked, this means that the plugin following the last reported
+one has crashed. Typically the caller may want to run it again,
+omitting that plugin.
+
+This program (src/helper.cpp) is written in C++98 and has no
+particular dependencies apart from the dynamic loader library.
+
+
+About the library
+-----------------
+
+Two C++ classes are provided for use by a host application:
+PluginCandidates and KnownPlugins.
+
+PluginCandidates knows how to invoke the checker program (if you
+provide the path to it) and will do so for a set of plugin paths of
+your request, returning success or failure reports to you.
+
+KnownPlugins knows about a limited set of plugin formats (currently
+Vamp, LADSPA, DSSI) and will use PluginCandidates to test all plugins
+found in those formats' standard installation directories.
+
+These are C++11 classes using the Qt toolkit.
+
+
+How to compile
+--------------
+
+A Qt project (checker.pro) is provided, which compiles the program and
+library:
+
+$ qmake checker.pro
+$ make
+
+It also builds a program called checker-client which exercises the
+library by using a KnownPlugins object with the program it just
+compiled and printing out the results.
+
+To compile only the command-line program, you should be able to use a
+single C++ compiler invocation like:
+
+$ c++ -o vamp-plugin-load-checker src/helper.cpp -ldl
+
+I expect that most often the program and library will be compiled as
+part of a larger host application. (They were written for use with
+Sonic Visualiser.)
+
+
+Copyright and licence
+---------------------
+
+Written by Chris Cannam at the Centre for Digital Music, Queen Mary
+University of London.
+
+    Copyright (c) 2016-2018 Queen Mary, University of London.
+
+    Permission is hereby granted, free of charge, to any person
+    obtaining a copy of this software and associated documentation
+    files (the "Software"), to deal in the Software without
+    restriction, including without limitation the rights to use, copy,
+    modify, merge, publish, distribute, sublicense, and/or sell copies
+    of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be
+    included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+    CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+    WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+    Except as contained in this notice, the names of the Centre for
+    Digital Music and Queen Mary, University of London shall not be
+    used in advertising or otherwise to promote the sale, use or other
+    dealings in this Software without prior written authorization.
+

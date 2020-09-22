@@ -1,0 +1,5 @@
+# This is a comment
+# This is a comment with various | possible | but not real	separators in it
+This is,the first,of the,real data lines
+# This,is,one,that,would,cause,more,columns,to,be,counted,if,it,were,real
+This is the,second

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="21.380083"
+   height="11.396614"
+   id="svg3360"
+   version="1.1"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   viewBox="0 0 21.380083 11.396614"
+   sodipodi:docname="arrow-left-white.svg"
+   inkscape:export-filename="/home/cannam/code/sv-iconset/cross-16.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45">
+  <defs
+     id="defs3362" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.395604"
+     inkscape:cx="-3.3441955"
+     inkscape:cy="5.058551"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:grid-bbox="true"
+     inkscape:document-units="px"
+     inkscape:snap-grids="true"
+     showguides="true"
+     objecttolerance="20"
+     inkscape:snap-bbox="false"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1727"
+     inkscape:window-height="1273"
+     inkscape:window-x="572"
+     inkscape:window-y="167"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3368"
+       spacingx="0.5"
+       spacingy="0.5"
+       dotted="false"
+       empspacing="2"
+       originx="-4.9825388"
+       originy="-10.941449" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3365">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-4.9825388,-9.6619369)">
+    <path
+       style="fill:#ef6a35;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 16.366102,10.2868 c -4.330277,0.804426 -5.508431,2.037742 -8.144838,4.547594 l -1.8741939,-1.804903 -0.9333067,7.59784 7.0374346,-1.495413 -1.843517,-1.761092 c 1.539662,-1.370928 1.834019,-1.785562 4.873815,-3.255662 2.361423,-1.142028 7.495891,-1.743375 10.333472,-0.875578 0.35745,-0.663435 0.07066,-1.073011 -3.417324,-2.549089 -1.73757,-0.663635 -4.307351,-0.723995 -6.031542,-0.403697 z"
+       id="path4139"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scccccsccs" />
+  </g>
+</svg>

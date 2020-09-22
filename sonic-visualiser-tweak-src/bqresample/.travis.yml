@@ -1,0 +1,21 @@
+language: cpp
+
+os:
+  - linux
+  - osx
+
+addons:
+  apt:
+    packages:
+      - libboost-test-dev
+      - valgrind
+
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" = "osx" ]] ; then brew update ; fi
+  - if [[ "$TRAVIS_OS_NAME" = "osx" ]] ; then brew install libsamplerate ; fi
+  - if [[ "$TRAVIS_OS_NAME" = "linux" ]] ; then ( cd .. ; curl -O http://www.mega-nerd.com/SRC/libsamplerate-0.1.9.tar.gz && tar xvzf libsamplerate-0.1.9.tar.gz && cd libsamplerate-0.1.9 && ./configure --enable-static --disable-shared && make && sudo make install ) ; fi
+  - ( cd .. ; git clone https://github.com/breakfastquay/bqvec )
+
+script:
+  - ./build/run-platform-tests.sh "$TRAVIS_OS_NAME"
+

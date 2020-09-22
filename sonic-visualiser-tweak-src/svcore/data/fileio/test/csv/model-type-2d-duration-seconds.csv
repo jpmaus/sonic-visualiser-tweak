@@ -1,0 +1,8 @@
+# There are only very limited circumstances in which we deduce that we
+# have a time+duration 2d model with units of seconds - basically only
+# when the values column is entirely integer values
+1.1,4,620
+2.2,4.2,880
+3.3,0.4,440
+4.4,3.8,213
+5.5,-2.3,123

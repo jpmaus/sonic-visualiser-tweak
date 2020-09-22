@@ -1,0 +1,9 @@
+# Here we see something that looks like time - value - value, but the
+# time column is integral and so is exactly one of the value columns,
+# so we deduce that that one is actually duration. We can only do this
+# if the values are non-integral
+45678,123,4
+123239,4214,4.2
+320130,12312,0.4
+452103,4123,3.8
+620301,987654,-2.3
