@@ -12,7 +12,7 @@ pitch detectors, and so on."  You can checkout some of these plugins here:
 
 A personal VAMP-plugin-favorite of mine is Mauch, Matthias, Dixon, Simon's [chordino](https://github.com/shidephen/chordino).  It's the most accurate and best 
 audio-to-MIDI tool I've encountered, maybe there are some new Deep-Learning based tools now but nothing could beat chordino five years ago.  [chordino](https://github.com/shidephen/chordino)
-allows the use of custom chord dictionaries.  I've included some of mine along with a numbers spreadsheet useful for calculating them in the folder chord.dict.
+allows the use of custom chord dictionaries.  I've included some of mine along with a numbers spreadsheet useful for calculating them in the folder chord.dicts.
 
 *"Hey melodyne!, Hey ableton!, Hey commercial music software makers!, Please learn a lesson from these SV folks: 
 the odds are if the results aren't simple diatonic chords and are instead dissonant clouds of chromatic nano-second-length 128th notes sounding harmonics higher 
