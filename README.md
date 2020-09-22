@@ -3,15 +3,12 @@ tweak adds ability to calculate/export tempo w/MIDI annotation layers
 ## sonic visualiser
 [Sonic Visualiser](https://github.com/sonic-visualiser/sonic-visualiser) is a really usefull "program for viewing and analysing the contents of music audio files," 
 developed by Chris Cannam, Christian Landone, and Mark Sandler in the Centre for Digital Music at Queen Mary, University of London.  
-Please see these links for more information:
 * Home Page and Downloads: [sonicvisualiser.org](http://www.sonicvisualiser.org/)
 * Code Project: [code.soundsoftware.ac.uk](https://code.soundsoftware.ac.uk/projects/sonic-visualiser)
-The program allows you to run "feature-extraction plugins to calculate annotations automatically, using algorithms such as beat trackers, 
-pitch detectors, and so on."  You can checkout some of these plugins here:
 * VAMP Plugins: [vamp-plugins.org/](http://www.vamp-plugins.org/)
 
-A personal VAMP-plugin-favorite of mine is Mauch, Matthias, Dixon, Simon's [chordino](https://github.com/shidephen/chordino).  It's the most accurate and best 
-audio-to-MIDI tool I've encountered, maybe there are some new Deep-Learning based tools now but nothing could beat chordino five years ago.  [chordino](https://github.com/shidephen/chordino)
+SV allows you to run "feature-extraction plugins to calculate annotations automatically, using algorithms such as beat trackers, 
+pitch detectors, and so on." A personal VAMP-plugin-favorite of mine is Mauch, Matthias, Dixon, Simon's [chordino](https://github.com/shidephen/chordino).  It's the most accurate and best audio-to-MIDI tool I've encountered, maybe there are some new Deep-Learning based tools now but nothing could beat chordino five years ago.  [chordino](https://github.com/shidephen/chordino)
 allows the use of custom chord dictionaries.  I've included some of mine along with a numbers spreadsheet useful for calculating them in the folder chord.dicts.
 
 *"Hey melodyne!, Hey ableton!, Hey commercial music software makers!, Please learn a lesson from these SV folks: 
